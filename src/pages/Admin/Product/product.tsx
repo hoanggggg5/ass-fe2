@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import { EditOutlined, DeleteOutlined, PlusOutlined } from '@ant-design/icons';
 import styled from "styled-components";
-import { Typography, Button, Table, Switch, Select } from 'antd';
+import { Typography, Button, Table, Switch, Select, message } from 'antd';
 import { Link } from 'react-router-dom'
 import type { ColumnsType } from 'antd/es/table';
 import { deleteProduct, editProduct, getAll } from "../../../api/product";
@@ -21,7 +21,7 @@ interface DataType {
 const ProductAdminPage = () => {
     
     const onChange = async (id: any, checked: boolean) => {
-        await editProduct({id, status: checked})
+        await editProduct(id, {status: checked})
     
         const newProduct = products.map(product => {
             if (product.id === id) {
@@ -40,12 +40,6 @@ const ProductAdminPage = () => {
             dataIndex: 'name',
             key: 'name',
             render: text => <div>{text}</div>,
-        },
-        {
-            title: 'Đặc điểm',
-            dataIndex: 'feature',
-            key: 'feature',
-            render: text => <div style={{ maxWidth: '600px'}}>{text}</div>,
         },
         {
             title: 'Giá khuyến mãi',

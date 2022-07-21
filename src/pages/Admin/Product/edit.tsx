@@ -16,7 +16,7 @@ const EditProductPage: React.FC = () => {
 
 	const onFinish = async (values: any) => {
 		try {
-			await createProduct(values)
+			await editProduct(id, values)
 			message.success("Tạo mới thành công")
 			navigate(-1)
 		} catch (err) {
@@ -114,12 +114,12 @@ const EditProductPage: React.FC = () => {
 						</Row>
 
 						<Form.Item
-							name="feature"
+							name="image"
 							labelCol={{ span: 24 }}
-							label="Đặc điểm nổi bật"
-							rules={[{ required: true, message: 'Đặc điểm sản phẩm' }]}
+							label="Ảnh"
+							rules={[{ required: true, message: 'Ảnh' }]}
 						>
-							<TextArea name="feature" />
+							<Input size="large" />
 						</Form.Item>
 						<Form.Item
 							name="description"

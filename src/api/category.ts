@@ -16,8 +16,8 @@ export const createCategory = (data:any) => {
     return instance.post(url, data)
 }
 
-export const editCategory = (data:any) => {
-    const url = "/categories/" + data.id
+export const editCategory = (id: any, data:any) => {
+    const url = "/categories/" + id
     return instance.patch(url, data)
 }
 

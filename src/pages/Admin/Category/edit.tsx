@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Typography, Col, Row, Button, Checkbox, Form, Input, InputNumber, Select, message } from 'antd'
 import { createProduct, editProduct, getAll, getProduct } from "../../../api/product";
 import { useNavigate, useParams } from "react-router-dom";
-import { getCategory } from "../../../api/category";
+import { editCategory, getCategory } from "../../../api/category";
 
 const EditCategoryPage: React.FC = () => {
 	const {id} = useParams()
@@ -12,7 +12,7 @@ const EditCategoryPage: React.FC = () => {
 
 	const onFinish = async (values: any) => {
 		try {
-			await createProduct(values)
+			await editCategory(id, values)
 			message.success("Tạo mới thành công")
 			navigate(-1)
 		} catch (err) {

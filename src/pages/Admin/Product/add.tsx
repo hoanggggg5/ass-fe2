@@ -14,10 +14,13 @@ const AddProductPage: React.FC = () => {
 	const navigate = useNavigate()
 	const [categories, setCategorys] = React.useState<any[]>([])
 	const onFinish = async (values: any) => {
-		console.log('Success:', values);
+		const product = {
+			...values,
+			status: true,
+		}
 
 		try {
-			const data = await createProduct(values)
+			const data = await createProduct(product)
 			message.success("Tạo mới thành công")
 			navigate(-1)
 		} catch (err) {
@@ -108,13 +111,14 @@ const AddProductPage: React.FC = () => {
 						</Row>
 
 						<Form.Item
-							name="feature"
+							name="image"
 							labelCol={{ span: 24 }}
-							label="Đặc điểm nổi bật"
-							rules={[{ required: true, message: 'Đặc điểm sản phẩm' }]}
+							label="Ảnh"
+							rules={[{ required: true, message: 'Ảnh' }]}
 						>
-							<TextArea name="feature" />
+							<Input size="large" />
 						</Form.Item>
+
 						<Form.Item
 							name="description"
 							labelCol={{ span: 24 }}

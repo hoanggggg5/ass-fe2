@@ -16,8 +16,8 @@ export const createProduct = (data:any) => {
     return instance.post(url, data)
 }
 
-export const editProduct = (data:any) => {
-    const url = "/products/" + data.id
+export const editProduct = (id: any, data:any) => {
+    const url = "/products/" + id
     return instance.patch(url, data)
 }
 

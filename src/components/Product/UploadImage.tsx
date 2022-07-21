@@ -40,11 +40,10 @@ const UploadImage = () => {
                     <input
                         type="file"
                         accept="image/png, image/jpg, image/jpeg, image/gif"
-                        name="image" onChange={handleChangeImage} />
+                        name="image" 
+                        // onChange={handleChangeImage} 
+                    />
                 </UploadIcon>
-                {/* <Button type="dashed" shape="circle" icon={<PlusCircleOutlined />} />
-                <Typography.Title level={5}>Thêm ảnh</Typography.Title> */}
-
                 {uploadedImage && (
                     <ImagePreview style={{}} src={uploadedImage} alt="Image" />
                 )}
