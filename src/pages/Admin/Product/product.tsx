@@ -109,8 +109,13 @@ const ProductAdminPage = () => {
 
     const handleFilter = (value: string) => {
         console.log(value, products);
-        const filterData = products.filter((item: any) => item.category == value)
-        setDataTable(filterData)
+        if (value == "all") {
+            console.log(value);
+            return setDataTable(products)
+        } else {
+            const filterData = products.filter((item: any) => item.category == value)
+            setDataTable(filterData)
+        }
     };
 
     const onDelete = async (id: number) => {
@@ -141,6 +146,7 @@ const ProductAdminPage = () => {
                         size="large"
                         onChange={handleFilter}
                     >
+                        <Option value="all">All</Option>
                         {categories.map((category) => {
                             return (
                                 <Option value={category.name}>{category.name}</Option>

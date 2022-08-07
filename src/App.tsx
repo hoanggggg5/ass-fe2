@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import logo from './logo.svg'
 import './App.css'
 import {Routes, Route} from 'react-router-dom'
 import ProductAdminPage from './pages/Admin/Product/product'
@@ -10,15 +9,26 @@ import EditProduct from './pages/Admin/Product/edit'
 import CategoriesPage from './pages/Admin/Category/category'
 import AddCategoryPage from './pages/Admin/Category/add'
 import EditCategoryPage from './pages/Admin/Category/edit'
+import HomePage from './pages/client'
+import ProductDetail from './pages/client/productDetail'
+import Login from './pages/client/login'
+import Register from './pages/client/register'
+import Cart from './pages/client/cart'
+import PrivateRoute from './pages/client/PrivateRoute'
 
 function App(props: any) {
   return (
     <div className="App">
       <Routes>
+        <Route path="/login" element={<Login/>}/>
+        <Route path="/register" element={<Register/>}/>
         <Route path='/' element={<UserLayout/>}>
+          <Route index element={<HomePage/>}/>
+          <Route path="cart" element={<Cart/>}/>
+          <Route path="product/:id" element={<ProductDetail/>}/>
         </Route>
         {/* Admin layout */}
-        <Route path='admin' element={<AdminLayout/>}>
+        <Route path='admin' element={<PrivateRoute><AdminLayout /></PrivateRoute>}>
           <Route path='products'>
             <Route index element={<ProductAdminPage/>}/>
             <Route path='add' element={<AddProductPage/>}/>

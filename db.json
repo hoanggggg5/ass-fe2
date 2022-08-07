@@ -1,99 +1,139 @@
 {
-  "users": [],
+  "users": [
+    {
+      "email": "admin@gmail.com",
+      "role": "admin",
+      "password": "$2a$10$mvNLoL/dDXiFCidwsZZtl../ufhrcCmpGhU.A8mc8jymWaMINPebC",
+      "firstName": "123",
+      "lastName": "123",
+      "id": 1
+    },
+    {
+      "email": "nghiemdanghoang@gmail.com",
+      "password": "$2a$10$5X9llATJ3e2vBS3KMoNHkOfrTIp9Eni4ifrBAvYLOtKv6ssBA7Pwq",
+      "name": "123",
+      "username": "",
+      "id": 2
+    }
+  ],
   "products": [
     {
       "name": "Galaxy Z Flip3 5G",
       "category": "phone",
-      "saleOffPrice": "42000000",
-      "description": "-Tặng gói BH mở rộng Samsung Care+ (KH không cần thêm gói BH vào giỏ hàng). Sau khi nhận sản phẩm mới, liên hệ 1800 588 855 (nhấn phím 3) để kiểm tra dịch vụ",
+      "saleOffPrice": 42000000,
+      "description": "[HOT] Thu cũ lên đời giá cao - Thủ tục nhanh - Trợ giá lên tới 1.000.000đ",
       "image": "https://res.cloudinary.com/dqtnuqde5/image/upload/v1644934542/js/irsb0dvruqnvseguhhzr.png",
       "id": 13,
-      "status": true
+      "status": true,
+      "originalPrice": 42000000
     },
     {
       "name": "Galaxy A52s 5G",
       "category": "phone",
-      "saleOffPrice": "800",
-      "description": "Duy nhất hôm nay, nhập HSFEB giảm thêm 500K",
+      "saleOffPrice": 800,
+      "description": "[HOT] Thu cũ lên đời giá cao - Thủ tục nhanh - Trợ giá lên tới 1.000.000đ",
       "image": "https://res.cloudinary.com/dqtnuqde5/image/upload/v1644934628/js/enpsmv4cekbuvikfnbms.png",
-      "id": 14
+      "id": 14,
+      "originalPrice": 800,
+      "status": false
     },
     {
       "name": "Galaxy M52 5G",
       "category": "phone",
-      "saleOffPrice": "600",
-      "description": "- Tặng Voucher giảm 50% mua Watch4 (R870, R875, R880, R885)",
+      "saleOffPrice": 600,
+      "description": "[HOT] Thu cũ lên đời giá cao - Thủ tục nhanh - Trợ giá lên tới 1.000.000đ",
       "image": "https://res.cloudinary.com/dqtnuqde5/image/upload/v1644934808/js/redeftcahkh7cqfywauo.png",
-      "id": 15
+      "id": 15,
+      "originalPrice": 600,
+      "status": true
     },
     {
       "name": "Galaxy Tab S7 FE LTE",
       "category": "tablet",
       "image": "https://res.cloudinary.com/dqtnuqde5/image/upload/v1644934878/js/owdifzhurwglu1vdjr5e.png",
-      "description": "Tặng Bao da. Vui lòng không xóa sản phẩm quà tặng khỏi giỏ hàng",
-      "saleOffPrice": "1400",
-      "id": 16
+      "description": "[HOT] Thu cũ lên đời giá cao - Thủ tục nhanh - Trợ giá lên tới 1.000.000đ",
+      "saleOffPrice": 1400,
+      "id": 16,
+      "originalPrice": 1400,
+      "status": true
     },
     {
       "name": "Galaxy Tab A8",
       "category": "tablet",
       "image": "https://res.cloudinary.com/dqtnuqde5/image/upload/v1644934930/js/fqt2krl5fuu4spxrwv8t.jpg",
-      "description": "Tặng Bao da.Vui lòng không xóa sản phẩm quà tặng khỏi giỏ hàng",
-      "saleOffPrice": "800",
+      "description": "[HOT] Thu cũ lên đời giá cao - Thủ tục nhanh - Trợ giá lên tới 1.000.000đ",
+      "saleOffPrice": 800,
+      "originalPrice": 1400,
       "id": 17
     },
     {
       "name": "Galaxy Tab A7 Lite LTE - Xám Vũ Trụ",
       "category": "tablet",
       "image": "https://res.cloudinary.com/dqtnuqde5/image/upload/v1644934980/js/fxb1asgy6oikftd1bdop.png",
-      "description": "Tặng Bao da.Vui lòng không xóa sản phẩm quà tặng khỏi giỏ hàng",
-      "saleOffPrice": "2000",
+      "description": "[HOT] Thu cũ lên đời giá cao - Thủ tục nhanh - Trợ giá lên tới 1.000.000đ",
+      "saleOffPrice": 2000,
+      "originalPrice": 1400,
       "id": 18
     },
     {
       "name": "Galaxy Watch4 LTE (40mm)",
       "category": "watch",
       "image": "https://res.cloudinary.com/dqtnuqde5/image/upload/v1644935109/js/espntpeywm34bii3twsd.png",
-      "description": "Duy nhất hôm nay, nhập HSFEB nhận ưu đãi giảm 20%",
-      "saleOffPrice": "800",
-      "id": 19
+      "description": "[HOT] Thu cũ lên đời giá cao - Thủ tục nhanh - Trợ giá lên tới 1.000.000đ",
+      "saleOffPrice": 800,
+      "id": 19,
+      "originalPrice": 800,
+      "status": false
     },
     {
       "name": "Galaxy Watch4 Classic Bluetooth (42mm)",
       "category": "watch",
       "image": "https://res.cloudinary.com/dqtnuqde5/image/upload/v1644935160/js/lmkxotr0bbda55wggxfw.png",
-      "description": "Duy nhất hôm nay, nhập HSFEB nhận ưu đãi giảm 30%",
-      "saleOffPrice": "200",
+      "description": "[HOT] Thu cũ lên đời giá cao - Thủ tục nhanh - Trợ giá lên tới 1.000.000đ",
+      "saleOffPrice": 200,
+      "originalPrice": 800,
       "id": 110
     },
     {
       "name": "Bút S Pen Pro đen",
       "category": "accessory",
       "image": "https://res.cloudinary.com/dqtnuqde5/image/upload/v1644935368/js/nwfoijoiz3ilhor6jwed.png",
-      "description": "Chiết khấu 20%",
-      "saleOffPrice": "123",
+      "description": "[HOT] Thu cũ lên đời giá cao - Thủ tục nhanh - Trợ giá lên tới 1.000.000đ",
+      "saleOffPrice": 123,
       "id": 111,
       "originalPrice": 6,
-      "feature": "a"
+      "status": true
     },
     {
       "name": "Galaxy Z Flip3 5G Silicone Cover with Strap",
       "category": "accessory",
       "image": "https://res.cloudinary.com/dqtnuqde5/image/upload/v1644935425/js/l9akjxsktlofrdm0nkr1.png",
-      "description": "Chiết khấu 20%",
-      "saleOffPrice": "20",
-      "id": 112
+      "description": "[HOT] Thu cũ lên đời giá cao - Thủ tục nhanh - Trợ giá lên tới 1.000.000đ",
+      "saleOffPrice": 20,
+      "originalPrice": 444,
+      "id": 112,
+      "status": false
     },
     {
       "name": "Đế Sạc Đôi Không Dây đen",
       "category": "phone",
       "image": "https://res.cloudinary.com/dqtnuqde5/image/upload/v1644935488/js/yctpyjptncttdnxtvs7s.png",
-      "description": "chiết khấu 25$",
-      "saleOffPrice": "400",
+      "description": "[HOT] Thu cũ lên đời giá cao - Thủ tục nhanh - Trợ giá lên tới 1.000.000đ",
+      "saleOffPrice": 400,
       "id": 113,
       "originalPrice": 444,
       "feature": "1111",
       "status": true
+    },
+    {
+      "name": "aaaaaaaaaaaaaaaa",
+      "originalPrice": 1,
+      "saleOffPrice": 1,
+      "category": "phone",
+      "image": "https://res.cloudinary.com/dqtnuqde5/image/upload/v1644934808/js/redeftcahkh7cqfywauo.png",
+      "description": "[HOT] Thu cũ lên đời giá cao - Thủ tục nhanh - Trợ giá lên tới 1.000.000đ",
+      "status": true,
+      "id": 114
     }
   ],
   "categories": [
@@ -116,6 +156,11 @@
       "key": "Đồng hồ",
       "name": "watch",
       "id": 4
+    },
+    {
+      "key": "nhà thông minh",
+      "name": "nhathongminh",
+      "id": 5
     }
   ]
 }

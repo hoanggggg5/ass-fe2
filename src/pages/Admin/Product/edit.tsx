@@ -49,9 +49,9 @@ const EditProductPage: React.FC = () => {
 				</Typography.Title>
 			</Breadcrumb>
 			<Row gutter={20}>
-				<Col span={10}>
+				{/* <Col span={10}>
 					<UploadImage />
-				</Col>
+				</Col> */}
 				<Col span={14}>
 					<Typography.Title level={5}>Thông tin sản phẩm</Typography.Title>
 					<Form
