@@ -13,6 +13,7 @@ import { ProductType } from "../../types/Product";
 import { RootState } from "../../app/rootReducer";
 import { useSelector } from "react-redux";
 import phone from "../../assets/images/phone.svg";
+import ListBanner from "../../components/ListBanner";
 
 const HomePage = () => {	
   const products: ProductType[] = useSelector((state: RootState) => state.products.value)
@@ -116,6 +117,11 @@ const HomePage = () => {
 						<ListProduct title="Sản phẩm nổi bật nhất" products={newProduct} />
           </Col>
         </Row>
+
+				<div className="mt-[40px]">
+          <div className="text-2xl">PHỤ KIỆN</div>
+					<ListBanner/>
+				</div>
 
 				<div className="mt-[40px]">
           <div className="text-2xl">CHUYÊN TRANG THƯƠNG HIỆU</div>
