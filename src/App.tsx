@@ -15,6 +15,7 @@ import Login from './pages/client/login'
 import Register from './pages/client/register'
 import Cart from './pages/client/cart'
 import PrivateRoute from './pages/client/PrivateRoute'
+import SearchPage from './pages/SearchPage'
 
 function App(props: any) {
   return (
@@ -25,6 +26,7 @@ function App(props: any) {
         <Route path='/' element={<UserLayout/>}>
           <Route index element={<HomePage/>}/>
           <Route path="cart" element={<Cart/>}/>
+          <Route path="search" element={<SearchPage/>}/>
           <Route path="product/:id" element={<ProductDetail/>}/>
         </Route>
         {/* Admin layout */}

@@ -22,9 +22,7 @@ const ProductPage = (props: Props) => {
   const [otherProducts, setOtherProducts] = useState<ProductType[]>([]);
   const [ count, setCount ] = useState<number>(1)
   const { id } = useParams()
-  const navigate = useNavigate()
   const dispatch = useDispatch()
-  const notify = () => toast("Successfully");
   
   useEffect(() => {
     const getProduct = async () => {
@@ -34,7 +32,6 @@ const ProductPage = (props: Props) => {
       setOtherProducts(otherProduct)
     }
     getProduct()
-    console.log("first")
   }, [])
 
   const downQuantity = () => {
@@ -52,7 +49,8 @@ const ProductPage = (props: Props) => {
       quantity: count
     }
     dispatch(addCart(newCart))
-    notify()
+    toast("Successfully")
+    console.log("first")
   }
 
   return (
